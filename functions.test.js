@@ -56,3 +56,9 @@ test('Should be greater than or equal to 1600', () => {
 test('There is no I in team', () => {
   expect('team').not.toMatch(/I/);
 })
+
+//Arrays 
+test('Admin should be in usernames', () => {
+  userNames = ['John', 'Karen', 'Admin'];
+  expect(userNames).toContain('Admin');
+});
