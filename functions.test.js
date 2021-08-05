@@ -19,5 +19,13 @@ test('Should be falsy', () => {
 test('Should be truthy', () => {
   expect(functions.checkValue(true)).toBeTruthy();
 });
+// toBe is for primative types
+//toStrictEqual
+test('User should be object', () => {
+  expect(functions.createUser()).toEqual({ 
+    firstName: 'Brad', 
+    lastName: 'Traversy' 
+  });
+});
 
 
